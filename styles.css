@@ -8,14 +8,33 @@ nav a {
   transition: color 0.3s;
 }
 
-.project-card:hover {
+.project-card:hover, .experience-card:hover, .skill-card:hover {
   transform: translateY(-5px);
   transition: transform 0.3s;
+}
+
+.toggle-details {
+  cursor: pointer;
+}
+
+.experience-card img {
+  max-width: 64px;
+  max-height: 64px;
 }
 
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     space-y-2;
+  }
+
+  .experience-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-card img {
+    margin-bottom: 1rem;
   }
 }
